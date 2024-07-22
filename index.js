@@ -19,7 +19,7 @@ const replaceval = (tempVal, orgVal) => {
 
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
-        requests('https://api.openweathermap.org/data/2.5/weather?q=kolkata&units=metric&appid=b1004f3a4814f740ff8da2e16ddcccd9')
+        requests('https://api.openweathermap.org/data/2.5/weather?q=kolkata&units=metric&appid=*******************')
             .on('data', (chunk) => {
                 const objData = JSON.parse(chunk);
                 const arrData = [objData];
